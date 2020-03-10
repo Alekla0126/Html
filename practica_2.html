@@ -57,7 +57,7 @@
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="project.html">Practica 1</a>
-                                        <a class="dropdown-item" href="practica_2.html">Practica 2</a>
+                                        <a class="dropdown-item" href="single-blog.html">Practica 2</a>
                                         <a class="dropdown-item" href="elements.html">Practica 3</a>
                                         <a class="dropdown-item" href="elements.html">Practica 4</a>
                                     </div>
@@ -78,8 +78,10 @@
                 <div class="col-xl-6 col-md-6">
                     <div class="banner_text">
                         <div class="banner_text_iner text-center">
-                            <h2>Practica uno<span></span> </h2>
-                            <font color = "red"><h3>contador de pulsos</h3></font>
+                            <h2>Practica dos<span></span> </h2>
+                            <font color="red">
+                                <h3>contador de tiempo</h3>
+                            </font>
                             <a href="index.html" class="btn_1">IR A CASA<i class="ti-angle-right"></i> </a>
                         </div>
                     </div>
@@ -114,10 +116,17 @@
                             <div class="offset-lg-1 col-lg-4 col-md-6">
                                 <div class="single_work_demo">
                                     <h2>Introducción</h2>
-                                    <p>En esta práctica se desarrollarán dos códigos, uno capaz de enviar cierta
-                                        cantidad de pulsos en determinador
-                                        tiempo y otro que recibirá estos pulsos y los contara, haciendo uso de dos
-                                        arduinos se llevara a cabo la práctica.</p>
+                                    <p>
+                                        En esta práctica se realizarán dos ejercicios y tres códigos, en el primer
+                                        ejercicio
+                                        se creara un código (haciendo uso de Arduino) que envíe 4 pulsos en una cierta
+                                        cantidad
+                                        de tiempo y en el segundo código se buscara indicar cuanto es que dura este
+                                        pulso
+                                        Para la segunda parte de la práctica se hará otro código que pueda leer los
+                                        pulsos recibidos
+                                        y nos indique si es HIGH o LOW.
+                                    </p>
                                 </div>
                             </div>
                             <div class="offset-lg-1 col-lg-6 col-md-6">
@@ -139,9 +148,12 @@
                                 <div class="single_work_demo">
                                     <br><br>
                                     <h3>Objetivos</h3>
-                                    <p>Haciendo uso de dos microcontroladores enviaremos pulsos de un microcontrolador a
-                                        otro y seremos capaces de ver
-                                        la cantidad de pulsos enviados y recibidos de un microcontrolador a otro</p>
+                                    <p>
+                                        Haciendo uso de microcontroladores enviaremos señales a través de un cable, para
+                                        poder realizar
+                                        una comunicación exitosa y comenzar a recibir información a través de estas
+                                        señales.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -152,13 +164,26 @@
                                 <div class="single_work_demo">
                                     <br><br>
                                     <h3>Marco Teórico</h3>
-                                    <h5>Arduino</h5>
-                                    <p>Es una plataforma de desarrollo basada en una placa electrónica de hardware libre
-                                        que incorpora un microcontrolador
-                                        re-programable y una serie de pines hembra. Estos permiten establecer conexiones
-                                        entre el microcontrolador y los diferentes
-                                        sensores y actuadores de una manera muy sencilla (principalmente con cables
-                                        dupont).</p>
+                                    <h5>Protocolo de comunicación:</h5>
+                                    <p>
+                                        Un protocolo de comunicaciones es un sistema de reglas que permiten que dos o
+                                        más
+                                        entidades de un sistema de comunicación se comuniquen entre ellas para
+                                        transmitir
+                                        información por medio de cualquier tipo de variación de una magnitud física.
+                                    </p>
+                                    <br><br>
+                                    <h5>Pulse In:</h5>
+                                    <p>
+                                        Lee un pulso (ALTO o BAJO) en un pin. Por ejemplo, si el valor es ALTO, pulseIn
+                                        ()
+                                        espera a que el pin pase de BAJO a ALTO, comienza a cronometrar, luego espera a
+                                        que
+                                        el pin pase a BAJO y detiene el cronometraje. Devuelve la duración del pulso en
+                                        microsegundos o se da por vencido y devuelve 0 si no se recibió un pulso
+                                        completo
+                                        dentro del tiempo de espera.
+                                    </p>
                                 </div>
                             </div>
                             <div class="offset-lg-1 col-lg-6 col-md-6">
@@ -184,15 +209,8 @@
                                 <br><br>
                                 <h3>Desarrollo</h3>
                                 <p>
-                                    1.- Se colocará un led en la salida de nuestro Arduino que esta enviando la señal
-                                    para que seamos capaces de apreciar
-                                    las señales, se conectaran los Arduino usando los puertos digitales, con ayuda de
-                                    cables realizaremos las conexiones pertinentes
-                                    para que la comunicación sea posible.
-                                    <br><br>
-                                    2.- En la imagen, se usará el Arduino de la parte inferior como el que envia señales
-                                    y el superior como receptor,
-                                    conectados.
+                                    Para continuar con lo planteado anteriormente se conectarán los dos Arduinos con 
+                                    el esquema mostrado en la imagen.
                                 </p>
                             </div>
                         </div>
