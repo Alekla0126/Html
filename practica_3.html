@@ -78,10 +78,15 @@
                 <div class="col-xl-6 col-md-6">
                     <div class="banner_text">
                         <div class="banner_text_iner text-center">
-                            <h2>Práctica dos<span></span> </h2>
+                            <h2>
+                                Práctica tres<span></span>
+                            </h2>
                             <font color="red">
-                                <br><br>
-                                <h5>CONTADOR DE TIEMPO</h5>
+                            <br><br>
+                                <h5>
+                                    PROTOCOLO DE COMUNICACÓN
+                                    -CONVERTIDOR A BINARIO
+                                </h5>
                             </font>
                             <a href="index.html" class="btn_1">IR A CASA<i class="ti-angle-right"></i> </a>
                         </div>
@@ -117,16 +122,11 @@
                             <div class="offset-lg-1 col-lg-4 col-md-6">
                                 <div class="single_work_demo">
                                     <h2>Introducción</h2>
+                                    <br>
                                     <p>
-                                        En esta práctica se realizarán dos ejercicios y tres códigos, en el primer
-                                        ejercicio
-                                        se creara un código (haciendo uso de Arduino) que envíe 4 pulsos en una cierta
-                                        cantidad
-                                        de tiempo y en el segundo código se buscara indicar cuanto es que dura este
-                                        pulso
-                                        Para la segunda parte de la práctica se hará otro código que pueda leer los
-                                        pulsos recibidos
-                                        y nos indique si es HIGH o LOW.
+                                        La practica tiene como objetivos conocer, identificar y comprobar el
+                                        funcionamiento al desarrollar un protocolo
+                                        de comunicación, en esta tercera parte de un convertidor a binario.
                                     </p>
                                 </div>
                             </div>
@@ -150,10 +150,16 @@
                                     <br><br>
                                     <h3>Objetivos</h3>
                                     <p>
-                                        Haciendo uso de microcontroladores enviaremos señales a través de un cable, para
-                                        poder realizar
-                                        una comunicación exitosa y comenzar a recibir información a través de estas
-                                        señales.
+                                        • Utilizando 1 Arduino, diseñar un sistema que permita convertir el valor
+                                        analógico de un potenciómetro en un arreglo de variables que representen el
+                                        numero en binario de 8 bits, de tal forma que podamos ver cada uno de los
+                                        valores como salidas digitales en los pines del Arduino.
+                                        <br>
+                                        • Utilizando un segundo Arduino, diseñar una función que permita convertir el
+                                        valor en binario obtenido de 8 puertos digitales del Arduino en un valor entero
+                                        en sistema decimal y mostrarlos en el monitor serial. Utilizar el primer Arduino
+                                        para generar los valores digitales en binario y el segundo Arduino utilizarlo
+                                        para decodificarlos y convertirlos en un valor decimal.
                                     </p>
                                 </div>
                             </div>
@@ -165,61 +171,67 @@
                                 <div class="single_work_demo">
                                     <br><br>
                                     <h3>Marco Teórico</h3>
-                                    <h5>Protocolo de comunicación:</h5>
+                                    <h5>Binario</h5>
                                     <p>
-                                        Un protocolo de comunicaciones es un sistema de reglas que permiten que dos o
-                                        más
-                                        entidades de un sistema de comunicación se comuniquen entre ellas para
-                                        transmitir
-                                        información por medio de cualquier tipo de variación de una magnitud física.
-                                    </p>
-                                    <br><br>
-                                    <h5>Pulse In:</h5>
-                                    <p>
-                                        Lee un pulso (ALTO o BAJO) en un pin. Por ejemplo, si el valor es ALTO, pulseIn
-                                        ()
-                                        espera a que el pin pase de BAJO a ALTO, comienza a cronometrar, luego espera a
-                                        que
-                                        el pin pase a BAJO y detiene el cronometraje. Devuelve la duración del pulso en
-                                        microsegundos o se da por vencido y devuelve 0 si no se recibió un pulso
-                                        completo
-                                        dentro del tiempo de espera.
+                                        El sistema binario es aquel que numera empleando sólo ceros (0) y unos (1). Esto
+                                        quiere decir que, en el marco de estos sistemas, cualquier cifra puede
+                                        expresarse a partir de estos números. Este sistema es utilizado por las
+                                        computadoras u ordenadores, que funcionan con un par de voltajes diferentes y
+                                        que atribuyen el 0 al apagado y el 1 al encendido.
+                                        <br><br>
+                                        <h5>Comunicación en paralelo</h5>
+                                        <br>
+                                        La comunicación paralela es un método para transmitir muchos packs de múltiples
+                                        dígitos en binarios (bits) de manera simultánea. A diferencia con la
+                                        comunicación serie, la cual solo transmite un bit cada vez; esta es una de las
+                                        características básicas que distinguen a los tipos de comunicaciones.
+                                        <br><br>
+                                        <h5>Función MAP</h5>
+                                        <br>
+                                        Esta función es bastante empleada en los proyectos de Arduino, ya que nos
+                                        permite «hacer equivalencias» entre diferentes rangos.
                                     </p>
                                 </div>
                             </div>
                             <div class="offset-lg-1 col-lg-6 col-md-6">
                                 <div class="demo_2" align="center">
                                     <br><br>
-                                    <img src="img/demo/demo_3.png" alt="demo" height="300" width="400">
+                                    <img src="img/Practica_3_mc.png" alt="demo" height="300" width="400">
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="single_work">
-                    <div class="row align-items-center">
-                        <div class="offset-lg-1 col-lg-6 col-md-6">
-                            <div class="demo_2" align="center">
-                                <img src="img/demo/desarrollo.png" alt="demo" height="300" width="300">
+                    <div class="single_work">
+                        <div class="row align-items-center">
+                            <div class="offset-lg-1 col-lg-6 col-md-6">
+                                <div class="demo_2" align="center">
+                                    <img src="img/conexion.png" alt="demo" height="400" width="600">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="single_work_demo">
-                                <br><br>
-                                <h3>Desarrollo</h3>
-                                <br>
-                                <p>
-                                    1.- Se colocará un led en la salida de nuestro Arduino que esta enviando la
-                                    señal
-                                    para que seamos capaces de apreciar las señales, se conectaran los Arduino
-                                    usando
-                                    los puertos digitales, con ayuda de cables realizaremos las conexiones
-                                    pertinentes
-                                    para que la comunicación sea posible.
+                            <div class="col-lg-4 col-md-6">
+                                <div class="single_work_demo">
+                                    <br><br>
+                                    <h3>Desarrollo</h3>
                                     <br>
-                                    2.- En la imagen, se usará el Arduino de la parte inferior como el que envia
-                                    señales y el superior como receptor, conectados.
-                                </p>
+                                    <p>
+                                        Para comenzar se utilizaran los siguientes materiales:
+                                        <br>
+                                        • 2 arduinos
+                                        <br>
+                                        • 1 protoboard
+                                        <br>
+                                        • Jumpers macho-macho
+                                        <br>
+                                        • 8 leds
+                                        <br>
+                                        • Potenciómetro
+                                        <br><br>
+                                        Una vez que reunamos los materiales se realizaran las que se observan en la
+                                        fotografía.
+                                        <br><br>
+                                        <br>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -232,44 +244,52 @@
 
     <!--Codigos de arduino-->
     <div align="center">
-        <h2>Primer código</h2>
-        <br><br>
-        <iframe src=https://create.arduino.cc/editor/alekla/ec438ecb-2233-4344-ab2b-7dc23bdd4164/preview?embed
-            style="height:700px;width:70%;margin:1px 0" align="center" frameborder=0></iframe>
-    </div>
-    <br><br>
-    <br><br>
-    <div align="center">
-        <h2>Segundo código</h2>
-        <br><br>
-        <iframe src=https://create.arduino.cc/editor/alekla/22a93b9b-160f-46f7-b243-efc2022c8fe4/preview?embed
-            style="height:700px;width:70%;margin:1px 0" align="center" frameborder=0></iframe>
-    </div>
-    <br><br>
-    <br><br>
-    <div align="center">
-        <h2>Tercer código</h2>
+        <h2>Primera parte</h2>
         <br><br>
         <div>
-            Para el ejercicio 3, se vuelve a usar el código de enviar y la misma configuración de las conexiones,
-            pero se cambiará el código de recibir por el que esta a continuación.
+            Para el primer ejercicio utilizaremos solamente un arduino, que estará
+            recibiendo la señal del potenciómetro y la traducirá a binario, se mostrará con
+            ayuda de los leds.
+            A continuación el código con explicación:
         </div>
         <br><br>
-        <iframe src=https://create.arduino.cc/editor/alekla/06d1ae9d-69f6-4844-94ab-683fb27beb98/preview?embed
+        <iframe src=https://create.arduino.cc/editor/alekla/f5bbc98c-4902-47a5-a6c9-60a5904e0e8d/preview?embed
             style="height:700px;width:70%;margin:1px 0" align="center" frameborder=0></iframe>
+        <br><br>
+        <br><br>
+    </div>
+    <div align="center">
+        <br><br>
+        <h3>Segunda parte</h3>
+        <br><br>
+        <div>
+            Para la segunda parte de la practica necesitaremos 2 arduinos, ya que la señal obtenida por el
+            potenciómetro será enviada a un segundo arduino y convertida a decimal de la
+            siguiente manera:
+        </div>
+        <br><br>
+        <br><br>
+    </div>
+    <div class="container-sm" align="center">
+        <img src="img/practica_3_2.png" alt="demo" width="1300">
     </div>
     <br><br>
     <br><br>
     <div align="center">
-        <h2>Simulación</h2>
-        <br><br>
-        <iframe
-            src="https://www.tinkercad.com/things/4TyPkSGEMJj-copy-of-spectacular-uusam-albar/editel?tenant=circuits"
-            frameborder="0" style="height:700px;width:70%;margin:1px 0" align="center" frameborder=0>
-        </iframe>
-        <br><br>
+        Como se aprecia en la simulación, se tiene un valor de 153 que se muestra en los leds.
         <br><br>
     </div>
+    <br><br>
+    <br><br>
+    <div align="center">
+        <h3>Tercera parte</h3>
+        <br><br>
+        <br><br>
+        <iframe src=https://www.tinkercad.com/things/bkLQcG94d9d-copy-of-cool-rottis/editel
+            style="height:700px;width:70%;margin:1px 0" align="center" frameborder=0></iframe>
+    </div>
+    <br><br>
+    <br><br>
     <!--Terminan los codigos de arduino-->
 
 
@@ -279,8 +299,7 @@
             <div class="row justify-content-between">
                 <div class="col-sm-6 col-md-6 col-xl-3">
                     <div class="single-footer-widget footer_1">
-                        <a href="index.html"> <img src="img/footer_logo.png" alt="" height="60" width="60">
-                        </a>
+                        <a href="index.html"> <img src="img/footer_logo.png" alt="" height="60" width="60"> </a>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-xl-4">
